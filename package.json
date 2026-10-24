@@ -1,0 +1,16 @@
+{
+  "name": "lostloop-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "LostLoop - A Modern Campus Lost & Found Platform",
+  "scripts": {
+    "install:all": "npm --prefix server install && npm --prefix client install",
+    "server": "npm --prefix server run dev",
+    "client": "npm --prefix client run dev",
+    "seed:admin": "npm --prefix server run seed:admin",
+    "seed:demo": "npm --prefix server run seed:demo"
+  },
+  "keywords": ["lostloop", "lost-and-found", "mern", "vite", "tailwind"],
+  "author": "LostLoop Team",
+  "license": "MIT"
+}

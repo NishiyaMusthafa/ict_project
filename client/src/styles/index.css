@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-[#FDFDFC] text-slate-800;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Glass & Gradient accents */
+.bg-grid-pattern {
+  background-size: 32px 32px;
+  background-image: 
+    linear-gradient(to right, rgba(124, 58, 237, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(124, 58, 237, 0.04) 1px, transparent 1px);
+}
+
+.gradient-text {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-violet-700 via-violet-600 to-indigo-600;
+}
