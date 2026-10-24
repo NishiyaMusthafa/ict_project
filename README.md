@@ -271,3 +271,5 @@ Replace `YOUR-USERNAME/YOUR-NEW-REPO` with the new repository details. If Git sa
 - Copy `client/.env.example` to `client/.env` for local configuration, then set `VITE_API_URL` to your backend API URL when deploying.
 - GitHub Pages can host the frontend only. The Express server and MongoDB must be hosted separately.
 - For the existing GitHub Pages workflow, add a repository variable named `VITE_API_URL` under **Settings → Secrets and variables → Actions → Variables**. Set it to the deployed backend URL ending in `/api`. Also enable GitHub Pages to deploy using **GitHub Actions** in the repository's Pages settings.
+#   i c t _ p r o j e c t  
+ 
